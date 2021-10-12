@@ -14,14 +14,8 @@ app = Flask(__name__)  # Initialise app
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    try:
-        r = requests.get('http://127.0.0.1:5001/getinfo').json()
-        temp = r['message']
-        print(temp)
-        return render_template('index.html',temp=temp)
-    except ValueError:  # includes simplejson.decoder.JSONDecodeError
-        print('Decoding JSON has failed')
-        return "new"
+        return render_template('index.html')
+
 
 @app.route('/getUserInfo', methods=['GET', 'POST'])
 def getUserInfo():
