@@ -22,6 +22,17 @@ def index():
         return response
 
 
+@app.route('/getUser', methods = ['GET', 'POST'])
+def getUser():
+    if request.method == 'POST':
+        req = request.json
+        response = app.response_class(
+            response=json.dumps(req),
+            status=200,
+            mimetype='application/json'
+        )
+        return response
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
