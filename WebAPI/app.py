@@ -4,11 +4,7 @@ from flask import jsonify
 from flask import json
 from flask.json import JSONEncoder
 
-
 import datacalcul
-
-
-
 
 ## Splitting Train/Validation/Test Sets
 
@@ -80,9 +76,15 @@ def getWeather():
         return response
 
 
-@app.route('/regression', methods=['GET', 'POST'])
-def regression():
+@app.route('/logistic_regression_dropNA', methods=['GET', 'POST'])
+def logistic_regression_dropNA():
     res = datacalcul.logistic_regression_dropNA()
+    return jsonify(res)
+
+
+@app.route('/analyse_linear_LDA', methods=['GET', 'POST'])
+def analyse_linear_LDA():
+    res = datacalcul.analyse_linear_LDA()
     return res
 
 

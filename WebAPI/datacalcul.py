@@ -196,7 +196,14 @@ def logistic_regression_dropNA():
     executionTime = "{:.2f}".format(time.perf_counter() - tps)
     acc.append([m, test_score, test_recall, test_auc, executionTime, fpr, tpr, thresholds])
     print("Execution time:", executionTime, "seconds")
-    return "ok"
+    return {
+            "best_score": best_score,
+            "best_parameters": best_parameters,
+            "test_score": test_score,
+            "test_recall": test_recall,
+            "test_auc": test_auc,
+            "executionTime": executionTime
+            }
 
 
 # Analyse Discirminante Linéaire (LDA)
