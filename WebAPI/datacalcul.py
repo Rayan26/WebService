@@ -235,7 +235,12 @@ def analyse_linear_LDA():
     executionTime = "{:.2f}".format(time.perf_counter() - tps)
     acc.append([m, test_score_lda, test_recall_lda, test_auc_lda, fpr_lda, tpr_lda, thresholds_lda])
     print("Execution time:", executionTime, "seconds")
-    return "ok"
+    return {
+        "test_score_lda": test_score_lda,
+        "test_recall_lda": test_recall_lda,
+        "test_auc_lda": test_auc_lda,
+        "executionTime": executionTime
+    }
 
 
 # Analyse Discriminante Quadratique (QDA)
@@ -268,7 +273,12 @@ def analyse_linear_QDA():
     executionTime = "{:.2f}".format(time.perf_counter() - tps)
     acc.append([m, test_score_qda, test_recall_qda, test_auc_qda, fpr_qda, tpr_qda, thresholds_qda])
     print("Execution time:", executionTime, "seconds")
-    return "ok"
+    return {
+        "test_score_qda": test_score_qda,
+        "test_recall_qda": test_recall_qda,
+        "test_auc_qda": test_auc_qda,
+        "executionTime": executionTime
+    }
 
 
 # Kernel Ridge
@@ -324,4 +334,6 @@ def kernel_ridge():
     score_krr = clf.score(X_test_scaled_dna, Y_test_dna, sample_weight=None)
     print("------- Kernel Ridge Regression ------- ")
     print("Test coefficient de détermination", score_krr)
-    return "ok"
+    return {
+        "score_krr": score_krr
+    }

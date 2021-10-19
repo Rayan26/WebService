@@ -85,7 +85,19 @@ def logistic_regression_dropNA():
 @app.route('/analyse_linear_LDA', methods=['GET', 'POST'])
 def analyse_linear_LDA():
     res = datacalcul.analyse_linear_LDA()
-    return res
+    return jsonify(res)
+
+
+@app.route('/analyse_linear_QDA', methods=['GET', 'POST'])
+def analyse_linear_QDA():
+    res = datacalcul.analyse_linear_QDA()
+    return jsonify(res)
+
+
+@app.route('/kernel_ridge', methods=['GET', 'POST'])
+def kernel_ridge():
+    res = datacalcul.kernel_ridge()
+    return jsonify(res)
 
 
 if __name__ == '__main__':
