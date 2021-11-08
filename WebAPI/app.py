@@ -76,6 +76,12 @@ def getWeather():
         return response
 
 
+@app.route('/logistic_regression_imputation', methods=['GET', 'POST'])
+def logistic_regression_imputation():
+    res = datacalcul.logistic_regression_imputation()
+    return res
+
+
 @app.route('/logistic_regression_dropNA', methods=['GET', 'POST'])
 def logistic_regression_dropNA():
     res = datacalcul.logistic_regression_dropNA()

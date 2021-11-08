@@ -39,6 +39,13 @@ ses_not_null_index = y[~y.isnull()].index
 x = x[ses_not_null_index]
 y = y[ses_not_null_index]
 
+df.groupby(['EDUC'])['SES'].median()
+
+df["SES"].fillna(df.groupby("EDUC")["SES"].transform("median"), inplace=True)
+
+# I confirm there're no more missing values and all the 150 data were used.
+pd.isnull(df['SES']).value_counts()
+
 # Splitting Train/Validation/Test Sets
 
 from sklearn.model_selection import train_test_split
@@ -109,7 +116,7 @@ def logistic_regression_imputation():
     tps = time.perf_counter()
 
     # Dataset with imputation
-    best_parameters = 0
+
     best_score = 0
     kfolds = 5  # set the number of folds
 
