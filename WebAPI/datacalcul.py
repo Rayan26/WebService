@@ -225,7 +225,6 @@ def analyse_linear_LDA():
     # compute mean cross-validation accuracy
     score = np.mean(scores)
 
-    print()
     # rebuild a model on the combined training and validation set
     SelectedDiscriminantAnalysisModel = LinearDiscriminantAnalysis().fit(X_trainval_scaled_dna, Y_trainval_dna)
 

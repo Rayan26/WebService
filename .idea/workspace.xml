@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPI/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPI/datacalcul.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/datacalcul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -24,8 +27,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebAPI/app.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/templates/index.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApp/app.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAPI/datacalcul.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/app.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zOskp3beclJ9ox9WUXchRmYMGb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,11 +37,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.app (1)">
     <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WebServiceApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebApp/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -72,6 +77,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebAPI/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -83,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
         <item itemvalue="Python.app (1)" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -110,5 +116,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WebService$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1636392016308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebApp" />
+    <SUITE FILE_PATH="coverage/WebService$app.coverage" NAME="app Coverage Results" MODIFIED="1636387267707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebAPI" />
   </component>
 </project>
